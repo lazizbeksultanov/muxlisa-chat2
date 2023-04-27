@@ -1,12 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import chatReducer from "../slices/chatSlice"
+import {chatSlice} from "@/store/reducers/chatSlice";
+import counterReducer from "../slices/counterSlice"
 
-export function makeStore() {
-    return configureStore({
-        reducer: {
-            chat: chatReducer,
-        },
-    })
-}
-
-export const store = makeStore();
+export const store =  configureStore({
+    reducer: {
+        // counterReducer,
+    }
+})
