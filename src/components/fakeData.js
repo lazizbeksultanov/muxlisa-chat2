@@ -1,11 +1,14 @@
 "use client"
 
 import { useDispatch, useSelector } from "react-redux";
+import { useGetUsersQuery } from "@/services/UserService";
 
 function FakeData () {
-    const {value} = useSelector(state => state.counterReducer)
-
-    console.log(value)
+    const {data} = useGetUsersQuery()
+    console.log(data)
+    // const {value} = useSelector(state => state.counterReducer)
+    //
+    // console.log(value)
 
     return(
         <div>
