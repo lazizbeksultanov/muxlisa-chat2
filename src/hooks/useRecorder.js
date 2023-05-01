@@ -89,8 +89,6 @@ export default function useRecorder() {
         };
     }, [recorderState.mediaRecorder]);
 
-    console.log(recorderState.audio)
-
     return {
         recorderState,
         startRecording: () => startRecording(setRecorderState),

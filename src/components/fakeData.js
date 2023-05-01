@@ -3,10 +3,9 @@
 import { useDispatch, useSelector } from "react-redux";
 
 function FakeData () {
-    const {title, data} = useSelector(state => state.chatReducer)
+    const {value} = useSelector(state => state.counterReducer)
 
-    console.log(title)
-    console.log(data)
+    console.log(value)
 
     return(
         <div>
